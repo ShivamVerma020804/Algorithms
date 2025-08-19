@@ -1,0 +1,37 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner sc = new Scanner(System.in);
+
+        // Entering the input size
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+
+        // Input array elements
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Enter the search element
+        int element = sc.nextInt();
+        boolean find = false;
+
+        // Linear Search
+        for (int i = 0; i < arr.length; i++) {
+            if (element == arr[i]) {
+                find = true;
+                break;
+            }
+        }
+
+        // Print result after loop ends
+        if (find) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not found");
+        }
+    }
+}
